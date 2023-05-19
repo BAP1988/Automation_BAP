@@ -1,0 +1,21 @@
+public class Program_7_DataType_Conversion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//FLOAT-------->INT
+		//EXPLICIT TYPECASTING
+		
+		float height=166.5f;
+		int num= (int) height;
+		System.out.println(num);
+		
+		//IMPLICIT TYPECASTING
+		int num2=100;
+		long phoneNumber=num2;
+		System.out.println(phoneNumber);
+		
+
+	}
+
+}
