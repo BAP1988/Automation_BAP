@@ -17,3 +17,24 @@ public class Program_4_DataTypes {
 	}
 
 }
+
+public class Program_5_Datatype2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char alpha='1';
+		System.out.println(alpha);
+		
+		boolean result=false;
+		System.out.println(result);
+		
+		short data=-31000;
+		System.out.println(data);
+		
+		byte b=-200;
+		System.out.println(b);
+		
+
+	}
+
+}
