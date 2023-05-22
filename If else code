@@ -1,0 +1,22 @@
+public class Program_9_if_else {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=1;
+while(num<=10)
+{
+	if(num%2==0)
+	{System.out.println(num+"is multiple of 2");
+}
+	if(num%3==0)
+	{
+		System.out.println(num+" is multiple pf 3");
+	}
+	else
+	{System.out.println(num+ "is not multiple of 3");
+		
+	}
+num=num+1;
+}
+}
+}
