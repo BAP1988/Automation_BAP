@@ -1,0 +1,29 @@
+
+
+public class Program_11_Polymorphism {
+
+	static void sum(int a)
+	{
+		System.out.println(a);
+	}
+	static void sum(int a, int b )
+	{
+		System.out.println(a+b);
+	}
+	static void sum(float a)
+	{
+		System.out.println(a);
+	}
+	static void sum(int b, float a)
+	{
+		System.out.println(b+a);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+sum(10);
+sum(10,20);
+sum(29.5f);
+	sum(10,1.5f);
+	}
+
+}
