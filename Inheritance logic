@@ -1,0 +1,23 @@
+public class Program_Inheritance_Example1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Parent p=new Parent();
+p.House="3BHK";
+ 
+Child c=new Child();
+c.House="2BHK";
+c.Car="Creata";
+GrandChild gc=new GrandChild();
+gc.House="2BHK";
+gc.Car="Kia";
+gc.Bisycle="Hero";
+
+AccessModifier obj=new AccessModifier();
+obj.privateNum=10;
+obj.defaultNum=10;
+obj.protectedNum=15;
+obj.publicNum=14;
+	}
+
+}
