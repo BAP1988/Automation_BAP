@@ -1,0 +1,50 @@
+package Day_5;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Program_8_HashSet {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<Integer>setA=new HashSet<Integer>();
+		setA.add(10);
+		setA.add(20);
+		setA.add(30);
+		setA.add(40);
+		HashSet<Integer>setB=new HashSet<Integer>();
+		setB.add(20);
+		setB.add(40);
+		setB.add(60);
+		//add- Union, Intersection are object
+		
+		HashSet<Integer>Union=new HashSet<Integer>(setA);
+		Union.addAll(setB);
+		{
+			System.out.println(Union);
+		}
+		//common value
+		HashSet<Integer>intersection=new HashSet<Integer>(setA);
+		intersection.retainAll(setB);
+		{
+			System.out.println(intersection);
+		}
+		//difference=value which is not common in both sets
+		HashSet<Integer>difference=new HashSet<Integer>(setA);
+		difference.removeAll(setB);
+		{
+			System.out.println(difference);
+		}
+		
+		Iterator<Integer>it=setA.iterator();
+		while(it.hasNext())
+		
+		{
+			System.out.println(it.next());
+		}
+
+	}
+
+}
