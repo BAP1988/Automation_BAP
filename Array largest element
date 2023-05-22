@@ -1,0 +1,21 @@
+
+
+public class Program_12_largestElementArray {
+
+	static void checkLargest(int arr[])
+	{
+		
+		int largest=arr[0];
+		for(int num:arr)
+		{if(num>largest)
+			largest=num;
+		}
+		System.out.println(largest);		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int arr[]= {11,1,4,18,2};
+checkLargest(arr);
+	}
+
+}
