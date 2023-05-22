@@ -1,0 +1,26 @@
+public class Program_1_class {
+
+	int num1;
+	int num2;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+student obj=new student(1,98.6f,10,"rahul");
+student obj3=new student(12);
+//student is class previously created
+//obj is object it can be anything eg pers
+//new gives memory to object
+//right side student() is method i.e Constructor it is same name as class
+obj.age=10;
+obj.rollno=1;
+obj.marks=98.6f;
+obj.name= "rahul";
+System.out.println(obj.rollno+" "+obj.name+" "+obj.marks);
+Program_1_class obj2=new Program_1_class();
+obj2.num1=10;
+obj2.num2=20;
+ System.out.println(obj2.num1+" "+obj2.num2);
+
+	}
+
+}
