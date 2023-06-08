@@ -1,0 +1,40 @@
+Package 1
+import java.util.List;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Program_5_AlertHandling_buttonlink {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\panka\\Desktop\\Selenium\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//*[text()='Click for JS Alert']")).click();
+        Alert alertWindow=driver.switchTo().alert();
+        Thread.sleep(3000);
+       System.out.println(alertWindow.getText());
+       Thread.sleep(3000);
+       alertWindow.accept();
+       driver.findElement(By.xpath("//*[text()='Click for JS Confirm']")).click();
+       Alert confirmWindow=driver.switchTo().alert();
+       Thread.sleep(3000);
+       System.out.println(confirmWindow.getText());
+       Thread.sleep(3000);
+       confirmWindow.dismiss();
+       driver.findElement(By.xpath("//*[text()='Click for JS Prompt']")).click();
+       Alert promptWindow=driver.switchTo().alert();
+       Thread.sleep(3000);
+       System.out.println(promptWindow.getText());
+       promptWindow.sendKeys("hello");
+       Thread.sleep(3000);
+       promptWindow.accept();
+       
+	}
+
+}
