@@ -1,0 +1,38 @@
+package selenium_Day2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Program_2_GetMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\panka\\Desktop\\Selenium\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		//webelement is a return type of a class	
+	
+	WebElement emailBox=driver.findElement(By.name("email"));
+	System.out.println(emailBox);
+	System.out.println(emailBox.getTagName());
+	System.out.println(emailBox.getAttribute("aria-label"));
+	System.out.println(emailBox.getCssValue("color"));
+	System.out.println(emailBox.isDisplayed());
+	System.out.println(emailBox.isEnabled());
+	System.out.println(emailBox.isSelected());
+	WebElement loginBtn=driver.findElement(By.name("login"));
+	System.out.println(loginBtn.getText());
+	System.out.println(loginBtn.getLocation().getX());
+	System.out.println(loginBtn.getRect().getHeight());
+	
+	
+	
+	
+	}
+
+}
