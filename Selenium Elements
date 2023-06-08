@@ -1,0 +1,37 @@
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Program_3_FindElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\panka\\Desktop\\Selenium\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com");
+		//webelement is a return type of a class	
+	List<WebElement> inputBox=driver.findElements(By.tagName("input"));
+	System.out.println(inputBox.size());// 6 input tags we have
+	//to input the value Hello in 3 and 4 input tag
+	inputBox.get(2).sendKeys("Hello");
+	// index value 2 and 3 for 3 and 4 input
+	inputBox.get(3).sendKeys("Hello");
+	
+	/*int count=0;
+	for(WebElement e:inputBox)
+	{
+		count++;
+		if (count==3||count==4)
+			e.sendKeys("Hello");*/
+		
+		
+		
+	}
+	}
+
+}
